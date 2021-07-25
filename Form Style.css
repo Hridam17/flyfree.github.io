@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+ body{
+    width: 100%;
+    height: 130vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.534),rgba(0,0,0,0.534),rgba(0,0,0,0.534)),url(1.jpg);
+    background-size: cover;
+    background-position: center;
+ }
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.heading{
+    color: gold;
+    font-size: 30px;
+    width: 50%;
+}
+.logo{
+    width: 120px;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: gold;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px; 
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+ div.Form{
+     width: 50%;
+     margin: 50px auto;
+ }
+
+h2 {
+    color: rgb(14, 199, 190);
+    font-size: 8vh;
+    text-align: center;
+    padding: 4px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+div.register{
+    background-color: rgba(0,0,0,0.534);
+    width: 100%;
+    font-size: 10px;
+    border-radius: 20px;
+    border:1px solid rgba(255,255,255,0.3);
+    box-shadow:2px 2px 15px rgba(0,0,0,0.3);
+    color:seashell;
+
+}
+
+form#register{
+    margin: 10px;
+}
+
+label{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    font-style: italic;
+}
+input#name{
+    width: 400px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+    background-color: #fff;
+    box-shadow: insert 1px 1px 5px rgba(0,0,0,0.3);
+}
+
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 30px;
+    font-weight: bold;
+    border:2px solid #20be5dea;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.button span{
+    background: #20be5dea;
+    height: 100%;
+    width: 0%;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+     width: 100%;
+}
+button:hover{
+    border: none;
+}
